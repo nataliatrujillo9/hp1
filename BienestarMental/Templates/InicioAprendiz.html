@@ -1,0 +1,51 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href='{%static 'css/InicioAprendiz.css'%}'>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="{% static 'image/logo-de-Sena-sin-fondo-Blanco.png'%}" width="95px"/>
+        </div>
+        <nav>
+            <ul>
+                <li onclick="location.href='http://127.0.0.1:8000/InicioAprendiz'">Inicio</li>
+                <li onclick="location.href='http://127.0.0.1:8000/MisionesAprendiz'">Misiones</li>
+                <li onclick="location.href='http://127.0.0.1:8000/index'">Cerrar Sesión</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="izquierda">
+                <h1>Nuestro Bienestar Mental</h1>
+                <h2>Bienvenido/a</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quasi ad ullam. Perspiciatis tempore placeat inventore aspernatur tenetur sint, voluptatem cumque deleniti dolores laborum non dicta illo accusamus quibusdam quas!</p>
+                <br>
+                <input type="submit" class="button1" value="Registra tus Emociones">
+        </div>
+        <div class="derecha">
+            <img src="{%static 'image/LovingDoodle.png'%}" id="img1" width="600px">
+        </div>
+    </div>
+    <div class="btn">
+        <button class="btn2" onclick="location.href='http://127.0.0.1:8000/MisionesAprendiz'"><h2>Misiones</h2>
+        <img src="{%static 'image/icons8-prueba-96.png'%}" id="Misiones" width="110px">
+        </button>
+        <button class="btn3" onclick="location.href='http://127.0.0.1:8000/Chat'"><h2>Chat Privado</h2>
+        <img src="{%static 'image/icons8-charla-96.png'%}" id="Chat" width="110px">
+        </button>
+    </div>
+    <div class="inf">
+        <img src="{%static 'image/logo-de-Sena-sin-fondo-Blanco.png'%}" id="logoinf" width="100px">
+
+    </div>
+</body>
+</html>

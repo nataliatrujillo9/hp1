@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+body{
+    background: linear-gradient(#fcad80db, #fff);
+}
+
+.container{
+    background: #fc7323;
+    width: 100%;
+    height: 90px;
+    display: flex;
+
+}
+
+nav{
+    background: #fc7323;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0, 4);
+}
+
+.logo{
+    margin-left: 10%;
+    margin-right: 40%;
+    justify-content: left;
+    align-items: left;
+   
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-grid;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0,3s;
+}
+
+nav ul li::after{
+    content: "";
+    background: #fb9357;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+}
+
+
+nav ul li:hover{
+    color: #000;
+}
+
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+.content{
+    width: 82%;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+
+.izquierda, .derecha{
+    width: 45%;
+    height: auto; overflow: hidden;
+    display: inline-block;
+}
+
+.izquierda{
+    text-align: left;
+    float: left;
+    padding-left: 4%;
+    padding-top: 10%;
+}
+
+.izquierda p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button1{
+    width: auto;
+    padding: 15px;
+    background: #fc7323;
+    color: #ffff;
+    font-size: 12px;
+    border-color: #bc561b;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.derecha{
+    float: right;
+    padding-right: 50%;
+}
+
+.btn{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+.btn2{
+    float: left;
+    margin-bottom: 8%;
+    height: 210px;
+    width: 30%;
+    background-color: transparent;
+    border-radius: 20px;
+    border-color: #fc7323;
+    border-width: 4px;
+    cursor: pointer;
+}
+
+.btn3{
+    float: right;
+    margin-bottom: 8%;
+    height: 210px;
+    width: 30%;
+    background-color: transparent;
+    border-radius: 20px;
+    border-color: #fc7323;
+    border-width: 4px;
+    z-index: 2;
+    transition: color 0,3s;
+    cursor: pointer;
+
+}
+
+.btn2:hover{
+    background-color: #eca881;
+    color: #e16118;
+}
+
+.btn3:hover{
+    background-color: #eca881;
+    color: #e16118;
+}
+
+.inf{
+    background: #fc7323;
+}
+
+.inf #logoinf{
+    margin-left: 10%;
+}

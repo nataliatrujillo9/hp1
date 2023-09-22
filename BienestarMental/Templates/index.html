@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <section>
+        <nav> 
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="{% static 'image/logo-de-Sena-sin-fondo-Blanco.png'%}" id="logo">
+            </a>
+            <ul>
+                <li><a class="active" href="#" onclick="location.href='http://127.0.0.1:8000/index'">Inicio</a></li>
+                <li><a href="#" onclick="location.href='http://127.0.0.1:8000/SignIn'">Iniciar Sesion</a></li>
+                <li><a href="#" onclick="location.href='http://127.0.0.1:8000/SignUp'">Crear Cuenta</a></li>
+            </ul>
+        </nav>
+    </section>
+
+     <section class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj49cj12Sw1yJBO87YMPNqKG_HbshYdkXlfTkNjLmxoBIHVV5t6SXebuFf8ocQmxGydhtThQaxNOL12Y8VpNMD8KKK52oAVZn7DBKkUKIX-RI0XSJOFZx-yeLrD-gUHNNOrr94Vb365fl33qNgwHmzDTlC_gHH8RuzM9QdagYnd0jW8pZTZGLKbvEintpCB/w640-h360/7.png">
+                <img id="slide-2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYjscNZjhjnuktULASzIx6sJ8l72Y3sLDy6OpA5GaTLtAgVq6ID0-SEJUYXa6Jo3bXKt5RXP7pO_zlxnWLeDvQTCdqsrJfc73ZNxwk7qk-yhPF1eA3JNlYpqHwSKKFfUVqFI7lZbkIgwNdRUKugLFEmBZluXeAKGw5iLvJR021nwu9fmGfntCC9-udaxKU/w640-h360/8.png" > 
+                <img  id="slide-3" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcSvWdHkez-j5qWgIiHyK8h8r8gPLaERAKmhTkpYsv6bDxBenzbi6-jDwb6CG-0_PZyRFrsuS8FwStqdMYOZqW6STw2tOw9ZdQjcBsaAFUyPV6q8_NgHLQrkpkPnUaI41GMwEdF6r5cj-RETe1lS1ZH0JQslJ6k9Q63dykyuOHCWg6k-g8lbA0aUrOd0er/w640-h360/1.png">
+                <img id="slide-4"  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXvtfVY2nQVM1eRrf_XxbhaZn8ZdxPvAos2JiLUgiRim6lzYsYH_2uzs59h_ZDhhUWe6hnrIY64qafjOFZAcZevOs0KtLA8fSg0yyD8-5d_S7Cad_DuaNAM1kAQJmPGU_tvOKkJ2IevyT6inqCFHze_rMZtZbFMieVP_GImtvZlgLydN2KnIsE_8EXJsEu/w640-h360/2.png">
+                <img id="slide-5" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiB1Yeu39wLT_DJnTIsPbf7GnOi8cZ-9_CFmIKdW5sMUghhJL3z0u7IaG1-IPiQt3__DKw7Bia2QqOUXqhWzWvPuRIa1E9Kzfp33bcHIl2SrOfN9t1YhJyymFBQXxlNFjmJ3NckKTlVnNNlaj1hJLDqW3TLSJLnV_K6qJbTknFmxjuufZKmE3jrPqKbmFNI/w640-h360/3.png">
+                <img id="slide-6" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOFPZQfPS_eKdetz2po9wWkR0biJx0HhUrzepnjI_oTEWModuCrY0SAo18taM0nLm2mjA3emYFpdisQrTiA796abc1lws-bco7fguTg6s5xRMuKnuuUq05buauafZ4qvAJB1SWVnd3h41ptl4dQpcgMemeOO8w74Xk_HVa73DbYrY2HU1_4RKWYTf6_8W5/w640-h360/4.png">
+                <img id="slide-7" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNNB1oC0LnrdeL77Sv4PeGoIp9f9AhNboWbLO9huDfy1BbBLkOJKg7Oexv-hOCAJqB-LHbKqt6LVw_SJXjMOUJIuP17ryJRojpw_keMnRlKwHfUNmClx8xUNs4m5UIVwJMqhuuR1FdQrwj4zSI9KMAQ2Z8BqmUNnTW8TIEK9gWbgBHIWvCFv4aSvUEXUEl/w640-h360/5.png" >
+                <img id="slide-8" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0Ltrk3xaYrWafIlIak1ORXBgd7xT6Saietu3_n7Q3S0FCiSPr-JrhG9GCtMk78cVx9uXy2EINVrlbTi-Yhzt5nTjhiapvogLI4t_eONvSm0R3MoMRJXiKKb8bWoImp3GKEk6lRusRQIDUqF2rmj8HKDQTdSX_yQgQTxDmVGN1voYc3N6BpTVZFfvoI_9X/w640-h360/6.png" >
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+                <a href="#slide-6"></a>
+                <a href="#slide-7"></a>
+                <a href="#slide-8"></a>
+
+            </div>
+
+        </div>
+
+      </section>
+
+      <br>
+      <center>
+        <hr noshade="noshade" width="50%">
+
+      </center>
+      
+      <br>
+
+      <section>
+        <div class="foro">
+            <h2>Foro</h2>
+        </div>
+        <div class="FORO">
+
+        </div>
+
+      </section>
+
+     
+</body>
+</html>

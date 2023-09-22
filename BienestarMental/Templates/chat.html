@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesoramiento Personalizado</title>
+    <link rel="stylesheet" href="{% static 'css/chat.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
+    <script src="{% static 'js/script.js' %}" defer> </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="{% static 'image/logo-de-Sena-sin-fondo-Blanco.png' %}" width="95px"/>
+        </div>
+        <nav>
+            <ul>
+                <li onclick="location.href='http://127.0.0.1:8000/InicioAprendiz'">Inicio</li>
+                <li onclick="location.href='http://127.0.0.1:8000/MisionesAprendiz'">Misiones</li>
+                <li onclick="location.href='http://127.0.0.1:8000/index'">Cerrar Sesión</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="izquierda">
+                <h1>Asesoramiento Personalizado</h1>
+                <h2>Recuerda:
+                </h2>
+                <br>
+                <p>Parece muy dificil pedir ayuda, pero es aun mas dificil admitir que la necesitas. Pedir ayuda no te hace debil, 
+                    te hace humano.</p>
+        </div>
+
+        <div class="derecha">
+            <img  src="{% static 'image/DancingDoodle.png' %}" width="700px">
+        </div>
+
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chat</h2>
+        </header> 
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>¡Hola! ¿Como puedo ayudarte? </p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Escribe un mensaje..." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+            
+        </div>
+
+    </div>
+   
+
+</body>
+</html>

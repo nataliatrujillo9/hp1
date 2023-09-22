@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis misiones</title>
+    <link rel="stylesheet" href="{%static 'css/MisionesApr.css' %}" >
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="{% static 'image/logo-de-Sena-sin-fondo-Blanco.png'%}" width="95px"/>
+        </div>
+        <nav>
+            <ul>
+                <li onclick="location.href='http://127.0.0.1:8000/InicioAprendiz'">Inicio</li>
+                <li onclick="location.href='http://127.0.0.1:8000/MisionesAprendiz'">Misiones</li>
+                <li onclick="location.href='http://127.0.0.1:8000/index'">Cerrar Sesión</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="inicio">
+        <Img src="{%static 'image/RollerSkatingDoodle.png' %}" id="img1" width="600px">
+        <h1>Mis Misiones</h1>   
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolor numquam qui a corrupti impedit animi ipsum dolore, minus possimus voluptatem vel porro sapiente id natus, assumenda quaerat omnis molestiae!</p>
+    </div>
+
+    <div class="container2">
+        <div class="botones">
+            <button class="card" id="boton1">Mis Misiones</button>
+            <button class="card"id="boton2">Hábitos Adquiridos</button>
+            <button class="card" id="boton3">Mi Calendario</button>
+            <button class="card" id="boton4">Mis Emociones</button>
+        </div>
+        <table class="table" id="table1" style="display:none;">
+            <tr>
+                <th>Check</th>
+                <th>Misión</th>
+                <th>Objetivo</th>
+                <th>Comentarios</th>
+                <th>Observaciones Psicólogo</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+<table class="table" id="table2" style="display:none;">
+    <tr>
+        <th>Misión</th>
+        <th>Hábitos</th>
+        <th>Comentarios</th>
+        <th>Observaciones Psicólogo</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<table class="table" id="table2" style="display:none;">
+    <tr>
+        <th>Check</th>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Actividad</th>
+        <th>Comentarios</th>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="checkbox"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="checkbox"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<script>
+    var botones = document.querySelectorAll("button");
+    var tablas = document.querySelectorAll("table");
+
+    botones.forEach(function(boton, index) {
+    boton.addEventListener("click", function() {
+
+        tablas.forEach(function(tabla) {
+        tabla.style.display = "none";
+        });
+
+        tablas[index].style.display = "table";
+    });
+    });
+</script>
+
+        <button class="button">Añadir Hábito</button>
+    </div>
+    <div class="containercards">
+
+        <div class="cards">
+            <img scr="">
+            <h4>Naturaleza</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis praesentium nesciunt corrupti, amet labore fuga, omnis, optio non obcaecati doloribus magnam placeat rem quidem exercitationem quaerat! Et tenetur ex facilis?</p>
+            <br>
+            <a>Leer más</a>
+        </div>
+
+        <div class="cards">
+            <img scr="">
+            <h4>Naturaleza</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis praesentium nesciunt corrupti, amet labore fuga, omnis, optio non obcaecati doloribus magnam placeat rem quidem exercitationem quaerat! Et tenetur ex facilis?</p>
+            <br>
+            <a>Leer más</a>
+        </div>
+
+        <div class="cards">
+            <img scr="">
+            <h4>Naturaleza</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis praesentium nesciunt corrupti, amet labore fuga, omnis, optio non obcaecati doloribus magnam placeat rem quidem exercitationem quaerat! Et tenetur ex facilis?</p>
+            <br>
+            <a>Leer más</a>
+        </div>
+    </div>
+
+    <img src="{%static 'image/composition-14.png' %}" id="img2">
+
+    <div class="inf">
+        <img src="{%static 'image/logo-sena-verde-png-2022.png' %}" class="logoinf">
+    </div>
+</body>
+</html>

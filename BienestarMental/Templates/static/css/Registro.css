@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+
+body{
+    
+    background: #c3c2c2;
+    
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+}
+
+#Registrar{
+    display: flex;
+    width: 900px;
+    height: auto;
+    background: linear-gradient( #bbe096, #ffff);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+}
+
+#Registro, #IniciarSesion{
+    flex: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+
+}
+
+#Registro{
+    padding: 40px;
+    position: relative;
+}
+
+#Registro #image{
+    height: 70px;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+#Registro h2{
+    text-align: center;
+    color: #000;
+    margin-block-start: 10px;
+    margin-bottom: 30px;
+}
+
+#Registro select{
+    width: 80px;
+    padding: 5px;
+    background: #bbe096;
+    border-color: #70b22d;
+}
+
+
+#Registro input{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid #70b22d;
+    color: #333;
+}
+
+#Registro #submit{
+    width: auto;
+    padding: 10px;
+    background: #70b22d;
+    color: #ffff;
+    font-size: 16px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 2);
+    cursor: pointer;
+}
+
+#Registro::before{
+    content: '<';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    right: 93%;
+    padding: 10px;
+    text-align: center;
+    font-size: 19px;
+    background: #70b22d;
+    border-color: #000;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 2);
+    color: #ffff;
+}
+
+#IniciarSesion{
+    background-color: #70b22d;
+    background-image: linear-gradient(rgba(25, 49, 25, 0.5), rgba(5, 7, 12, 0.75)), url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA9_RVWRi53GUtXkUfw8e9xx1tDwIyjJu9ZZubUurbLu0IzW8RG0B2w_K377CQiKf17yfkw9iIShgk-q4b0PrBHsnCtmwdOhqLAWS_DWDWEhGy2sdSCvhkGDH5QdLwuTF36uY3u0ItdP1Rd8Uu8oVOPP77dUTVz5aOtxB1pzco9i8C-j-jqWEUBqq1nA/s294/SENA%20CSF.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    padding: 40px;
+}
+
+#IniciarSesion h2{
+    text-align: center;
+    color: #eae9e9;
+    margin-top: 40%;
+    margin-block-end: 50%;
+}
+
+#IniciarSesion h4{
+    text-align: center;
+    color: #c3c2c2;
+    margin: 2%;
+    margin-bottom: 10%;
+}
+
+#IniciarSesion #button{
+    width: auto;
+    padding: 10px;
+    background: #70b22d;
+    color: #ffff;
+    font-size: 16px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 2);
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}

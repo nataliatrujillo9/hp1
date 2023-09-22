@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misiones</title>
+    <link rel="stylesheet" href="{%static 'css/MisionesPsi.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="{% static 'image/logo-de-Sena-sin-fondo-Blanco.png'%}" width="95px"/>
+        </div>
+        <nav>
+            <ul>
+                <li onclick="location.href='http://127.0.0.1:8000/InicioPsicologo'">Inicio</li>
+                <li onclick="location.href='http://127.0.0.1:8000/MisionesPsicologo'">Misiones</li>
+                <li onclick="location.href='http://127.0.0.1:8000/index'">Cerrar Sesión</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="inicio">
+        <Img src="{% static 'image/RollerSkatingDoodle.png' %}" id="img1" width="600px">
+        <h1>Misiones</h1>   
+        
+    </div>
+
+    <div class="container2">
+        <h2>Ficha Técnica</h2>
+        <div class="botones">
+            <button class="card" id="boton1">Mis Misiones</button>
+            <button class="card"id="boton2">Hábitos Adquiridos</button>
+            <button class="card" id="boton3">Emociones Registradas</button>
+        </div>
+        <table class="table" id="table1" style="display:none;">
+            <tr>
+                <th>Check</th>
+                <th>Misión</th>
+                <th>Objetivo</th>
+                <th>Comentarios</th>
+                <th>Observaciones Psicólogo</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+<table class="table" id="table2" style="display:none;">
+    <tr>
+        <th>Misión</th>
+        <th>Hábitos</th>
+        <th>Comentarios</th>
+        <th>Observaciones Psicólogo</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<table class="table" id="table2" style="display:none;">
+    <tr>
+        <th>Check</th>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Actividad</th>
+        <th>Comentarios</th>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="checkbox"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="checkbox"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<script>
+    var botones = document.querySelectorAll("button");
+    var tablas = document.querySelectorAll("table");
+
+    botones.forEach(function(boton, index) {
+        boton.addEventListener("click", function() {
+
+        tablas.forEach(function(tabla) {
+        tabla.style.display = "none";
+        });
+
+        tablas[index].style.display = "table";
+    });
+    });
+</script>
+
+        <button class="button">Añadir Misión</button>
+    </div>
+    <img src="{%static 'image/composition-14.png' %}" id="img2">
+
+    <div class="inf">
+        <img src="{%static 'image/logo-sena-verde-png-2022.png' %}" class="logoinf">
+    </div>
+</body>
+</html>
